@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qiantao</title>
+</head>
+<body>
+    <!--特殊的块级元素：p/h1~h6/dt-->
+    <p>p标签<strong>包裹行内元素</strong></p>
+    <p>p标签
+        <div>包裹div块级元素</div>
+        <div style="display:block">包裹被inline的行级元素</div>
+    </p>
+    <!--其余块级元素：可以嵌套任何元素-->
+    <div>div标签<strong>包裹行内元素</strong></div>
+    <div>
+        div标签
+        <div>包裹div标签</div>
+    </div>
+    <!--行内元素的嵌套-->
+    <span>span标签<span>嵌套span标签</span></span>
+    <p></p>
+    <span>
+        span嵌套
+        <div style="width:250px;height:50px;">div标签</div>
+    </span>
+    <p></p>
+    <span>
+        span标签
+        <span style="display:block">嵌套block的span标签</span>
+    </span>
+</body>
+</html>

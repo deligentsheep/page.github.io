@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>gridlayout</title>
+<style>
+    /* 第一种：自定义，无规律 */
+    /* .item1 { grid-area: header; }
+    .item2 { grid-area: menu; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: right; }
+    .item5 { grid-area: footer; } */
+    /* 用grid直接写排布或者用网格线起点和终点规定排布 */
+    /* .grid-container{
+        display:grid;
+        grid:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+    .grid-container div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    } */
+
+    /* .grid-container{
+        display:grid;
+        grid-gap: 10px;
+        grid-template-columns: auto auto auto;
+        background-color: #2196F3;
+        padding:10px;
+    }
+    .grid-container div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    } */
+    /* .item1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    } */
+
+     /* 第二种：几行几列，有规律 */
+     /* grid-template-columns规定列数，这里是三列，则自动分配三行 */
+     /* grid-template-rows规定行高，依次为每行高度 */
+     /* grid-gap表示行间距(grid-row-gap)和列间距(gris-column-gap) */
+     /* .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 100px 100px 100px;
+        background-color: #2196F3;
+        grid-gap: 10px 10px;
+        padding: 10px;
+    }
+    .grid-container div{
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    } */
+</style>
+</head>
+<body>
+    <!-- 第一种 -->
+    <!-- <h1>网页模版</h1>
+    <div class="grid-container">
+        <div class="item1">头部</div>
+        <div class="item2">菜单</div>
+        <div class="item3">主要内容区域</div>  
+        <div class="item4">右侧</div>
+        <div class="item5">底部</div>
+    </div> -->
+
+    <!-- 第二种 -->
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>  
+    </div>
+</body>
+</html>

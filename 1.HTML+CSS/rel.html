@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rel</title>
+</head>
+<body>
+    <a href="http://127.0.0.1:5500/show.html" target="_blank">点击打开新网站</a><br><br>
+    
+    <button >点击打开新网站</button><br><br>
+    <form method="get" action="show.html">
+        <input type="text" id="name" name="name">
+        <input type="submit" onclick="openinnewtap()" value="submit">
+    </form>
+    <button onclick="openinnewtap()">点击我</button>
+    <script>
+        // const form=document.querySelector('form');
+        // const input=document.querySelector('#name');
+        // form.addEventListener('submit',(event)=>{
+        //     event.preventDefault();
+        //     const url=new URL(form.action);
+        //     url.searchParams.set('nam    e',input.value);
+        //     window.location.href=url.toString();
+        // });
+        // function openinnewtap(){
+        //     var newTab = window.open();
+        //     //newTab.opener = null;
+        //     newTab.location = "show.html";
+        // }
+    </script>
+</body>
+</html>

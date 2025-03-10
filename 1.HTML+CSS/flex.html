@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>flex</title>
+<style> 
+#main
+{
+	width:300px;
+	height:300px;
+	border:1px solid black;
+	display:flex;
+  justify-content:space-between;  
+    /* flex-direction*/
+    /* flex-direction: row-reverse;  */
+
+    /* flex-flow:倒序并且必要时拆行 */
+    /* flex-flow: row-reverse wrap; */
+
+    /* flex-wrap */
+    /* flex-wrap: wrap; */
+}
+/* flex */
+/* #main div
+{
+	flex:1;
+} */
+/* flex-grow、flex-shrink和flex-basis */
+
+/* flex-basic  */
+#main div {
+    flex-basis:40px;
+}
+/* #main div:nth-of-type(2) {
+    flex-basis: 80px;
+}  */
+
+/* flex-grow */
+    /* #main div:nth-of-type(1) {flex-grow: 1;}
+    #main div:nth-of-type(2) {flex-grow: 3;}
+    #main div:nth-of-type(3) {flex-grow: 1;} */
+
+/* flex-shrink */
+/* #main div{
+    flex-basis: 120px;
+} */
+/* .box1{ 
+  flex-shrink: 1;
+}
+.box2{ 
+  flex-shrink: 2; 
+} */
+
+
+
+
+</style>
+</head>
+<body>
+
+<div id="main">
+  <div style="background-color:coral;" class="box1">A</div>
+  <div style="background-color:lightblue;" class="box2">B</div>  
+  <div style="background-color:lightgreen;" class="box2">C</div>
+</div>
+
+
+</body>
+</html>
