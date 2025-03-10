@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api</title>
+</head>
+<body>
+    <button id="back" onclick="api()">返回上一个页面</button>
+    <script>
+        function api(){
+            history.back();
+        }
+        document.getElementById("back").addEventListener("click",()=>{
+            //history.back();
+            history.go(-1);
+        });
+    </script>
+</body>
+</html>
